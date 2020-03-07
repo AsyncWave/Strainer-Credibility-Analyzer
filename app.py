@@ -12,10 +12,10 @@ import collections
 
 from joblib import dump, load
 
-CONSUMER_KEY = "eCcOHT9FzWkINeH78O2tN5Mr7"
-CONSUMER_SECRET = "qlsSKiJtgTbLwC5YMEHzGvN4P2Lvygxm7EgsTSdVwTJBTLLRpL"
-ACCESS_TOKEN = "715007031556448256-V9UNiZR80oypXR7D1G8ofAQObYDkOUj"
-ACCESS_TOKEN_SECRET = "2hekp24EvWAl6khZCaxyTfVtbz2XVG4dcFO4DP8jp96Je"
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
+ACCESS_TOKEN = ""
+ACCESS_TOKEN_SECRET = ""
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
@@ -27,7 +27,7 @@ mongo = PyMongo()
 
 app = Flask(__name__)
 
-app.config["MONGO_URI"] = 'mongodb+srv://Malith:789123@cluster0-r8ack.mongodb.net/test?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = ''
 #Example_____________
 #app.config["MONGO_URI"] = 'mongodb+srv://<user>:<password>@strainercluster-igrpg.azure.mongodb.net/<collection-name>?retryWrites=true&w=majority'
 CORS(app)
